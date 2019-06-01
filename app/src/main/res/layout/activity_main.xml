@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@drawable/background"
+            android:id="@+id/header"
+            android:outlineSpotShadowColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="142dp"
+            />
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/background"
+            android:id="@+id/money1"
+            android:layout_below="@id/header"
+            android:layout_width="match_parent"
+            android:layout_height="192dp">
+        <TextView
+            android:id="@+id/m"
+            android:textColor="#707070"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="33dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이번 달 사용 금액은"
+            />
+            <TextView
+                android:layout_below="@+id/m"
+                android:textSize="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="115dp"
+                android:textColor="#2F4CC4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16250"
+                />
+            <TextView
+                android:textColor="#707070"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="109dp"
+                android:textSize="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="원 입니다"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/background"
+            android:id="@+id/news"
+            android:layout_below="@+id/money1"
+            android:layout_width="match_parent"
+            android:layout_height="37dp">
+        <TextView
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            android:text="[NEWS] 장애인 배려 없는 대중교통...교통약자 이동권 보장돼야"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <Button
+            android:paddingTop="10dp"
+            android:textSize="30dp"
+            android:drawableTop="@drawable/telephone"
+            android:text="전화"
+            android:textColor="#000000"
+            android:layout_below="@id/news"
+            android:layout_alignParentRight="true"
+            android:id="@+id/call"
+            android:background="@drawable/background"
+            android:layout_width="210dp"
+            android:layout_height="137dp" />
+        <Button
+            android:paddingTop="20dp"
+            android:textSize="30dp"
+            android:background="@drawable/background"
+            android:id="@+id/btn1"
+            android:drawableTop="@drawable/reciept"
+            android:textColor="#000000"
+            android:text="최근 납부 내역"
+            android:layout_below="@id/news"
+            android:src="@drawable/reciept"
+            android:layout_width="202dp"
+            android:layout_height="274dp" />
+        <Button
+            android:textSize="30dp"
+
+            android:layout_below="@id/call"
+            android:layout_alignParentRight="true"
+            android:drawableTop="@drawable/siren"
+
+            android:layout_width="210dp"
+            android:layout_height="137dp"
+            android:background="@drawable/background"
+            android:textColor="#000000"
+            android:text="119"
+            android:id="@+id/em"
+            android:src="@drawable/siren"
+           />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
