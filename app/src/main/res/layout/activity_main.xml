@@ -5,8 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <RelativeLayout
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        app:umanoPanelHeight="140dp"
+        app:umanoShadowHeight="20dp"
+        ><RelativeLayout
         android:background="#FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -116,7 +121,13 @@
             android:id="@+id/em"
             android:src="@drawable/siren"
            />
-
     </RelativeLayout>
+        <ImageView
+            android:gravity="top"
+            android:background="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/card"/>
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -33,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent("android.intent.action.CALL",Uri.parse("tel:119")));
             }
         });
+        findViewById(R.id.btn1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(m,Main2Activity.class));
+            }
+        });
+
 
         findViewById(R.id.call).setOnClickListener(new View.OnClickListener() {
             @Override
