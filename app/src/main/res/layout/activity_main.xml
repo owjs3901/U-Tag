@@ -129,5 +129,15 @@
             android:layout_height="wrap_content"
             android:src="@drawable/card"/>
     </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+<ImageView
+    android:id="@+id/load"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingLeft="110dp"
+    android:paddingRight="60dp"
+    android:gravity="center"
+    android:src="@drawable/logo"/>
+
 
 </android.support.constraint.ConstraintLayout>
